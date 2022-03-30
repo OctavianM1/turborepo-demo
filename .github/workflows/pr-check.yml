@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-      name: Build and Test
+      name: Build
       runs-on: ubuntu-latest
 
       steps:
@@ -28,5 +28,5 @@ jobs:
         - name: Install dependencies
           run: yarn install
 
-        - name: Test
-          run: yarn build
+        - name: Build
+          run: sudo yarn build
